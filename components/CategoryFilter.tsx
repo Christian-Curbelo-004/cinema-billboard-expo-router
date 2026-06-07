@@ -1,7 +1,6 @@
-import {ScrollView, TouchableOpacity, Text} from 'react-native';
+import {ScrollView, TouchableOpacity, Text, StyleSheet} from 'react-native';
 
-
-const Categories = ['Acción', 'Comedia', 'Drama', 'Terror', 'Sci-Fi'];
+const Categories = ['Action', 'Comedy', 'Drama', 'Horror', 'Sci-Fi', 'Romance'];
 
 interface Props {
     selectedCategories: string;
@@ -20,3 +19,22 @@ export default function CategoryFilter({selectedCategories, onSelect}: Props) {
         </ScrollView>
     )
 }
+const styles = StyleSheet.create({
+  categoryButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    marginHorizontal: 4,
+    borderRadius: 20,
+    backgroundColor: '#eee',
+  },
+  selectedCategoryButton: {
+    backgroundColor: '#f4511e',
+  },
+  categoryButtonText: {
+    color: '#333',
+  },
+  selectedCategoryButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+});

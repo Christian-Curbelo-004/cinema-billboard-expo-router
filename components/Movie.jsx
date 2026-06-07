@@ -25,10 +25,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   poster: {
-    height: 200,
-    borderRadius: 8,
-    marginVertical: 10,
-  },
+  height: 200,
+  width: '100%',
+  borderRadius: 8,
+  marginVertical: 10,
+},
   description: {
     fontSize: 14,
     color: '#555',
